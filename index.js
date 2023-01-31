@@ -3,6 +3,8 @@ const form = document.querySelector('form')
 const optionContainer = document.querySelector('#option-container')
 const question = document.querySelector('#question')
 
+localStorage.clear()
+
 function addNewOptionItem(e){
     e.preventDefault()
     const newItem = document.createElement('div')
@@ -37,7 +39,8 @@ function savePoll(){
         voteOptions.push(item)
     }
     localStorage.setItem('question', question.value)
-    localStorage.setItem('options', options)
+    localStorage.setItem('options', JSON.stringify(voteOptions))
+    localStorage.setItem('voters', JSON.stringify(0))
 }
 
 addBtn.addEventListener('click', addNewOptionItem)

@@ -14,16 +14,11 @@
     </div>
 
     <div class="body">
-        <p>Choose A President</p>
-        <form action="">
-            <input type="radio" name="president">
-            <label for="tinibu">Bola Ahmed Tinibu</label> <br>
-            <input type="radio" name="president" id="">
-            <label for="peter">Peter Obi</label> <br>
-            <input type="radio" name="president">
-            <label for="atiku">Atiku Abubakar</label> <br>
-
-            <button class="doneBtn">Done</button>
+        <p id="question-element"></p>
+        <form method="POST" action="./poll.html">
+            <div id="options-container">
+            </div>
+            <button class="doneBtn" type="submit">Vote</button>
         </form>
     </div>
     <script type="text/javascript" src="./poll.js"></script>
