@@ -1,6 +1,7 @@
 const addBtn = document.querySelector('#addBtn')
-const saveBtn = document.querySelector('#savePollBtn')
+const form = document.querySelector('form')
 const optionContainer = document.querySelector('#option-container')
+const question = document.querySelector('#question')
 
 function addNewOptionItem(e){
     e.preventDefault()
@@ -9,6 +10,7 @@ function addNewOptionItem(e){
 
     newOption.setAttribute('type', 'text')
     newOption.setAttribute('class', 'option')
+    newOption.setAttribute('required', true)
     newItem.appendChild(newOption)
 
     const removeBtn = document.createElement('button')
@@ -29,10 +31,14 @@ function savePoll(){
     const voteOptions = []
     const options = document.querySelectorAll('input.option')
     for (let i = 0; i < options.length; i++) {
-        voteOptions.push(options[i].value)
+        const item = {}
+        item.value = options[i].value
+        item.votes = 0
+        voteOptions.push(item)
     }
-    console.log(voteOptions)
+    localStorage.setItem('question', question.value)
+    localStorage.setItem('options', options)
 }
 
 addBtn.addEventListener('click', addNewOptionItem)
-saveBtn.addEventListener('click', savePoll)
+form.addEventListener('submit', savePoll)

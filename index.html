@@ -10,14 +10,14 @@
     <h1>QuickPoll</h1>
     <form action="./poll.html" method="POST">
         <p>Question</p>
-        <input type="text" name="Question" placeholder="Enter Question">
+        <input type="text" name="Question" placeholder="Enter Question" id="question" required>
         <p>Options</p>
         <div class="option-container" id="option-container">
             <div class="option-item">
-                <input type="text" class="option">
+                <input type="text" class="option" required>
             </div>
             <div class="option-item">
-                <input type="text" class="option">
+                <input type="text" class="option" required>
             </div>
         </div>
         <button class="addBtn" id="addBtn">Add</button> 
