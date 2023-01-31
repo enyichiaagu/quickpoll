@@ -8,6 +8,8 @@ const questionElement = document.querySelector('#question-element')
 questionElement.textContent = question
 
 const voters = JSON.parse(localStorage.getItem('voters'))
+const countHeader = document.querySelector('h2')
+countHeader.textContent += ` ${voters+1}` 
 
 voteOptions.forEach((option, index) => {
     const field = document.createElement('div')
