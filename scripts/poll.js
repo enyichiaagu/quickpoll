@@ -8,16 +8,16 @@ const questionElement = document.querySelector('#question-element')
 questionElement.textContent = question
 
 const voters = JSON.parse(localStorage.getItem('voters'))
-const countHeader = document.querySelector('h2')
-countHeader.textContent += ` ${voters+1}` 
+const counter = document.querySelector('span#count')
+counter.textContent += ` ${voters}` 
 
 voteOptions.forEach((option, index) => {
-    const field = document.createElement('div')
+    const field = document.createElement('span')
     const radioBtn = document.createElement('input')
     radioBtn.setAttribute('type', 'radio')
     radioBtn.setAttribute('id', `option${index}`)
-    radioBtn.setAttribute('name', 'choose')
     radioBtn.setAttribute('class', 'radio')
+    radioBtn.setAttribute('name', 'choose')
     const label = document.createElement('label')
     label.setAttribute('for', `option${index}`)
     label.textContent = option.value

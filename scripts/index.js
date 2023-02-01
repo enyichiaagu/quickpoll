@@ -5,6 +5,7 @@ const question = document.querySelector('#question')
 
 localStorage.clear()
 
+let optionCounter = 2;
 function addNewOptionItem(e){
     e.preventDefault()
     const newItem = document.createElement('span')
@@ -13,12 +14,12 @@ function addNewOptionItem(e){
 
     newOption.setAttribute('type', 'text')
     newOption.setAttribute('class', 'option')
+    newOption.setAttribute('placeholder', 'Add new option')
     newOption.setAttribute('required', true)
     newItem.appendChild(newOption)
 
-    const removeBtn = document.createElement('button')
-    removeBtn.setAttribute('class', 'removeBtn')
-    removeBtn.textContent = '❌'
+    const removeBtn = document.createElement('i')
+    removeBtn.setAttribute('class', 'fas fa-regular fa-xmark')
     removeBtn.addEventListener('click', removeNewOption)
 
     newItem.appendChild(removeBtn)

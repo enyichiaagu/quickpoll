@@ -5,22 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QuickPoll Voting Area</title>
+    <link rel="stylesheet" href="./css/util.css" />
+    <link rel="stylesheet" href="./css/poll.css" />
 </head>
 <body>
+    <div class="container">
+        <header> 
+            <h1 class="logo">QuickPoll</h1>
+            <button class="btn endPoll" id="endPollBtn">End Poll</button>
+        </header>
 
-    <div> 
-        <h1>QuickPoll</h1>
-        <button class="endPollBtn">End Poll</button>
-    </div>
-    <h2>Voter</h2>
-    <div class="body">
-        <p id="question-element"></p>
         <form method="POST" action="./poll.html">
+            <h4 id="question-element">Loading question ...</h4>
+
             <div id="options-container">
             </div>
-            <button class="doneBtn" type="submit">Vote</button>
+            <button class="btn done" type="submit">Vote</button>
         </form>
+        <span id="count">Voter count:</span>
     </div>
-    <script type="text/javascript" src="./poll.js"></script>
+    <script type="text/javascript" src="./scripts/poll.js"></script>
 </body>
 </html>
