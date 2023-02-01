@@ -1,0 +1,47 @@
+/* Index page */
+
+
+label {
+  display: block;
+  margin: 15px 0 8px;
+  color: #757575;
+  font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    outline: 0;
+}
+
+.inp {
+  display: block;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.inp i {
+    position: absolute;
+    right: 8px;
+    bottom: 30%;
+    color: #757575;
+}
+
+.btns {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.add {
+    background: #213869f5;
+    margin-right: 5px;
+}
+
+.save-poll {
+    background: #58aa58;
+    margin-right: 5px;
+    margin-bottom: 30px;
+}
+

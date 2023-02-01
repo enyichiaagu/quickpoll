@@ -1,0 +1,40 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    /* background: coral; */
+    padding: 5px;
+    margin-bottom: 8px;
+}
+
+h4 {
+    color: #757575;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.endPoll {
+    background: #ec4b4b;
+}
+
+.elction {
+    width: 100%;
+    /* background: coral; */
+}
+
+span {
+    display: block;
+    margin-top: 10px;
+}
+
+label {
+    margin-left: 13px;
+    font-weight: bold;
+     color: #757575;
+}
+
+.done {
+     background: #58aa58;
+     padding: 13px;
+     margin: 25px 0;
+     text-align: center;
+}

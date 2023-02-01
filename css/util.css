@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&family=Noto+Sans+Tangsa:wght@400;500;600;700&family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+.logo {
+    text-decoration: underline;
+    color: #757575;
+}
+
+.container {
+  background: #fff;
+  min-height: 300px;
+  min-width: 400px;
+  padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn {
+    padding: 13px;
+    border-radius: 3px;
+    border: none;
+    font-size: medium;
+    color: #fff;
+}
