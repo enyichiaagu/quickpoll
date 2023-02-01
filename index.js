@@ -7,7 +7,8 @@ localStorage.clear()
 
 function addNewOptionItem(e){
     e.preventDefault()
-    const newItem = document.createElement('div')
+    const newItem = document.createElement('span')
+    newItem.setAttribute('class', 'inp')
     const newOption = document.createElement('input')
 
     newOption.setAttribute('type', 'text')
