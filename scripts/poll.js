@@ -39,7 +39,3 @@ function vote(){
 }
 
 form.addEventListener('submit', vote)
-
-console.log(localStorage.getItem('question'))
-console.log(localStorage.getItem('options'))
-console.log(localStorage.getItem('voters'))

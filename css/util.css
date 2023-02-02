@@ -23,8 +23,10 @@ body {
 .container {
   background: #fff;
   min-height: 300px;
-  min-width: 400px;
+  min-width: 300px;
+  width: 400px;
   padding: 20px;
+  margin: 20px;
 }
 
 a {

@@ -17,6 +17,10 @@
   padding-bottom: 5px;
 }
 
+.winner-label {
+  color: #58aa58;
+}
+
 .stat {
   margin-top: 30px;
 }
