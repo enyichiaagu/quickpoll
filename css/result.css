@@ -1,0 +1,51 @@
+.header h3 {
+  text-align: center;
+  margin: 10px 0;
+  color: #555555;
+}
+
+.label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  letter-spacing: 0.5px;
+  color: #555555;
+}
+
+.winner {
+  min-width: 50%;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.stat {
+  margin-top: 30px;
+}
+
+.contestants {
+  margin-bottom: 15px;
+}
+
+.contestants h5 {
+  font-size: 15px;
+}
+
+.contestants span {
+  display: flex;
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+.contestants span .percentage {
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+.btn-div {
+  width: 100%;
+  text-align: center;
+}
+
+.new-poll {
+  background: #58aa58;
+  margin: 30px 0;
+}
