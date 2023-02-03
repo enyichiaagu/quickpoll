@@ -5,7 +5,7 @@ const options = JSON.parse(localStorage.getItem('options'))
 const voters = JSON.parse(localStorage.getItem('voters'))
 
 options.sort((a, b) => b.votes - a.votes)
-winnerElement.textContent = options[0].value
+winnerElement.textContent = options[0].votes == options[1].votes ? "It's a Draw" : options[0].votes
 
 for (let i = 0; i < options.length; i++) {
     const contestant = document.createElement('div')
